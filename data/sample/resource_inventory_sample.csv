@@ -1,0 +1,9 @@
+project_id,resource_name,service,machine_type,region,avg_cpu_30d,avg_memory_30d,current_monthly_cost,recommended_action,estimated_monthly_saving,risk_level,owner
+prj-retail-prod,gce-web-01,Compute Engine,e2-standard-4,asia-southeast2,18,42,245,Downsize to e2-standard-2,92,Medium,platform-team
+prj-retail-prod,gce-web-02,Compute Engine,e2-standard-4,asia-southeast2,21,45,241,Downsize to e2-standard-2,88,Medium,platform-team
+prj-retail-dev,gce-dev-test,Compute Engine,n2-standard-4,asia-southeast2,5,12,318,Schedule off-hours / downsize,190,Low,dev-team
+prj-data-analytics,gce-batch-large,Compute Engine,n2-highmem-16,us-central1,9,28,1120,Use batch schedule and committed use review,410,Medium,data-team
+prj-shared-services,gce-legacy-reporting,Compute Engine,n1-standard-8,asia-southeast1,7,22,690,Migrate to Cloud Run Job or downsize,315,Medium,shared-services
+prj-retail-prod,sql-orders-prod,Cloud SQL,db-custom-4-15360,asia-southeast2,24,46,510,Reduce vCPU after performance test,125,High,database-team
+prj-data-analytics,bq-marketing-mart,BigQuery,N/A,asia-southeast2,0,0,610,Partition and cluster large tables,155,Low,data-team
+prj-shared-services,gcs-archive-temp,Cloud Storage,N/A,asia-southeast2,0,0,130,Move to Nearline/Archive,72,Low,shared-services

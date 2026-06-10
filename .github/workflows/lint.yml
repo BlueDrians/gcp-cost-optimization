@@ -1,0 +1,34 @@
+name: Repository Quality Check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-safety:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Check required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f .gitignore
+          test -f dashboard/finops_cost_dashboard.xlsx
+          test -f docs/presales-one-pager.md
+          test -f sql/analysis/top_expensive_resources.sql
+
+      - name: Scan obvious sensitive files
+        run: |
+          if find . -type f | grep -Ei '(credentials\.json|service-account\.json|\.pem$|\.key$|terraform\.tfvars$|\.env$)'; then
+            echo "Potential sensitive file detected."
+            exit 1
+          fi
+
+      - name: Python syntax check
+        run: |
+          python -m py_compile scripts/*.py

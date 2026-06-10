@@ -1,0 +1,5 @@
+month,project_id,budget_amount,actual_cost,forecast_cost,variance,status
+2026-03,prj-retail-prod,12500,12147.03,13118.79,-352.97,Healthy
+2026-03,prj-retail-dev,3500,14556.89,15721.44,11056.89,Over Budget
+2026-03,prj-data-analytics,9500,13599.71,14687.69,4099.71,Over Budget
+2026-03,prj-shared-services,5000,14693.7,15869.2,9693.7,Over Budget
