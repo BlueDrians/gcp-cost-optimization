@@ -1,18 +1,18 @@
 # GCP Cost Optimization Dashboard
 
-A portfolio-ready **FinOps and Cloud Cost Optimization Dashboard** for Google Cloud. This repository demonstrates how a presales, cloud architect, or solution architect can analyze Cloud Billing export data, detect expensive resources, recommend rightsizing actions, define budget guardrails, and prepare an executive cost-saving summary.
+A portfolio-ready **FinOps and Cloud Cost Optimization Dashboard** for Google Cloud. This repository demonstrates how a presales, cloud architect, or solution architect can analyze Cloud Billing export data, detect expensive resources, recommend rightsizing actions, define budget guardrails, and prepare an executive cost-saving summary
 
-> Use case: Helping companies identify potential cloud cost savings through billing analysis, resource utilization review, rightsizing recommendations, budget alerts, and executive reporting.
+> Use case: Helping companies identify potential cloud cost savings through billing analysis, resource utilization review, rightsizing recommendations, budget alerts, and executive reporting
 
 ## Key Features
 
-- Simulated Google Cloud Billing export dataset for BigQuery analysis.
-- BigQuery SQL queries and views for cost analysis.
-- Dashboard workbook with KPI summary, service breakdown, budget variance, and rightsizing recommendations.
-- Looker Studio dashboard design guide.
-- Budget alert Terraform sample.
-- FinOps methodology and executive summary template.
-- Python scripts for local analysis and executive report generation.
+- Simulated Google Cloud Billing export dataset for BigQuery analysis
+- BigQuery SQL queries and views for cost analysis
+- Dashboard workbook with KPI summary, service breakdown, budget variance, and rightsizing recommendations
+- Looker Studio dashboard design guide
+- Budget alert Terraform sample
+- FinOps methodology and executive summary template
+- Python scripts for local analysis and executive report generation
 
 ## Repository Structure
 
@@ -53,14 +53,14 @@ gcp-cost-optimization-dashboard/
 
 ## Business Value
 
-This project is designed to show that cost optimization is not only a technical exercise. It combines billing analysis, budget controls, utilization signals, business prioritization, and executive communication.
+This project is designed to show that cost optimization is not only a technical exercise. It combines billing analysis, budget controls, utilization signals, business prioritization, and executive communication
 
 Typical outcomes:
-- Identify top cost drivers by service, project, SKU, and resource.
-- Detect month-to-date budget variance.
-- Prioritize rightsizing candidates by estimated saving and risk.
-- Prepare executive-level saving narrative for decision makers.
-- Provide a reusable FinOps operating model for customers.
+- Identify top cost drivers by service, project, SKU, and resource
+- Detect month-to-date budget variance
+- Prioritize rightsizing candidates by estimated saving and risk
+- Prepare executive-level saving narrative for decision makers
+- Provide a reusable FinOps operating model for customers
 
 ## Quick Start
 
@@ -109,13 +109,13 @@ sql/analysis/top_expensive_resources.sql
 
 This repository is suitable for a Cloud Architect / Solution Architect portfolio because it demonstrates:
 
-- Cost-aware architecture thinking.
-- FinOps analysis and executive storytelling.
-- BigQuery analytics for billing data.
-- Dashboard planning for Looker Studio.
-- Budget governance and operational guardrails.
-- Practical recommendations customers can act on.
+- Cost-aware architecture thinking
+- FinOps analysis and executive storytelling
+- BigQuery analytics for billing data
+- Dashboard planning for Looker Studio
+- Budget governance and operational guardrails
+- Practical recommendations customers can act on
 
 ## Disclaimer
 
-All sample data is dummy data for portfolio and learning purposes. Do not upload real customer billing exports or confidential project information to a public repository.
+All sample data is dummy data for portfolio and learning purposes. Do not upload real customer billing exports or confidential project information to a public repository
