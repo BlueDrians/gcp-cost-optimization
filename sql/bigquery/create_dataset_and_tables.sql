@@ -1,9 +1,6 @@
--- Create dataset and sample external-like tables for FinOps analysis.
--- Replace `YOUR_PROJECT_ID` and dataset names before running in a real environment.
+CREATE SCHEMA IF NOT EXISTS `PROJECT_ID.finops`;
 
-CREATE SCHEMA IF NOT EXISTS `YOUR_PROJECT_ID.finops`;
-
-CREATE OR REPLACE TABLE `YOUR_PROJECT_ID.finops.billing_export_sample` (
+CREATE OR REPLACE TABLE `PROJECT_ID.finops.billing_export_sample` (
   usage_start_date DATE,
   billing_account_id STRING,
   project_id STRING,
@@ -22,7 +19,7 @@ CREATE OR REPLACE TABLE `YOUR_PROJECT_ID.finops.billing_export_sample` (
   labels STRING
 );
 
-CREATE OR REPLACE TABLE `YOUR_PROJECT_ID.finops.resource_inventory_sample` (
+CREATE OR REPLACE TABLE `PROJECT_ID.finops.resource_inventory_sample` (
   project_id STRING,
   resource_name STRING,
   service STRING,
@@ -37,7 +34,7 @@ CREATE OR REPLACE TABLE `YOUR_PROJECT_ID.finops.resource_inventory_sample` (
   owner STRING
 );
 
-CREATE OR REPLACE TABLE `YOUR_PROJECT_ID.finops.budget_sample` (
+CREATE OR REPLACE TABLE `PROJECT_ID.finops.budget_sample` (
   month STRING,
   project_id STRING,
   budget_amount NUMERIC,
