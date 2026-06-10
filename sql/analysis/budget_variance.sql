@@ -12,5 +12,5 @@ SELECT
     WHEN SAFE_DIVIDE(actual_cost, budget_amount) >= 0.8 THEN 'Warning'
     ELSE 'Healthy'
   END AS alert_status
-FROM `YOUR_PROJECT_ID.finops.budget_sample`
+FROM `PROJECT_ID.finops.budget_sample`
 ORDER BY budget_used_percent DESC;
