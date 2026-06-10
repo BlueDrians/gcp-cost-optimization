@@ -1,4 +1,4 @@
-CREATE OR REPLACE VIEW `YOUR_PROJECT_ID.finops.vw_rightsizing_candidates` AS
+CREATE OR REPLACE VIEW `PROJECT_ID.finops.vw_rightsizing_candidates` AS
 SELECT
   project_id,
   resource_name,
@@ -13,5 +13,5 @@ SELECT
   estimated_monthly_saving * 12 AS estimated_annual_saving,
   risk_level,
   owner
-FROM `YOUR_PROJECT_ID.finops.resource_inventory_sample`
+FROM `PROJECT_ID.finops.resource_inventory_sample`
 WHERE estimated_monthly_saving > 0;
